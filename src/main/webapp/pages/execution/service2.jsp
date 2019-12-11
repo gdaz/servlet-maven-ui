@@ -1,3 +1,5 @@
+<%@ page contentType="text/html; charset=UTF-8" %>
+
 <div class="main-body">
     <div class="col-sm-12">
         <div class="box-body">

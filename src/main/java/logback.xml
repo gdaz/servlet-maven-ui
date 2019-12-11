@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration debug="true">
-    <!--<property name="DEV_HOME" value="D:/logs_BPM" />-->
     <property name="DEV_HOME" value="/opt/tomcat/logs"/>
-<!--    <property name="DEV_HOME" value="/var/log/tomcat/mainapp"/>-->
-    <!--<property name="DEV_HOME" value="/root/logs_BPM"/>-->
-
     <property name="APPLICATION_NAME_TH" value="ระบบ front end"/>
-
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <charset>UTF-8</charset>
@@ -15,29 +10,29 @@
         </encoder>
     </appender>
 
-    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${DEV_HOME}/MainApp2.log</file>
-        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
-            <charset>UTF-8</charset>
-            <Pattern>%-30(%d{YYYY-MM-dd HH:mm:ss.SSS} [${APPLICATION_NAME_TH}] [%thread, %X{X-B3-TraceId:-}, %X{X-B3-SpanId:-}]) %highlight(%-5level) %logger [%M\(%F:%L\)] : %msg%n</Pattern>
-            <outputPatternAsHeader>true</outputPatternAsHeader>
-        </encoder>
+<!--    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">-->
+<!--        <file>${DEV_HOME}/MainApp2.log</file>-->
+<!--        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">-->
+<!--            <charset>UTF-8</charset>-->
+<!--            <Pattern>%-30(%d{YYYY-MM-dd HH:mm:ss.SSS} [${APPLICATION_NAME_TH}] [%thread, %X{X-B3-TraceId:-}, %X{X-B3-SpanId:-}]) %highlight(%-5level) %logger [%M\(%F:%L\)] : %msg%n</Pattern>-->
+<!--            <outputPatternAsHeader>true</outputPatternAsHeader>-->
+<!--        </encoder>-->
 
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <!-- rollover daily -->
-            <maxHistory>30</maxHistory>
-            <totalSizeCap>1GB</totalSizeCap>
-            <fileNamePattern>${DEV_HOME}/archived/MainApp2.%d{yyyy-MM-dd}.%i.log
-            </fileNamePattern>
-            <timeBasedFileNamingAndTriggeringPolicy
-                    class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-                <maxFileSize>10MB</maxFileSize>
-            </timeBasedFileNamingAndTriggeringPolicy>
-        </rollingPolicy>
-    </appender>
+<!--        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">-->
+<!--            &lt;!&ndash; rollover daily &ndash;&gt;-->
+<!--            <maxHistory>30</maxHistory>-->
+<!--            <totalSizeCap>1GB</totalSizeCap>-->
+<!--            <fileNamePattern>${DEV_HOME}/archived/MainApp2.%d{yyyy-MM-dd}.%i.log-->
+<!--            </fileNamePattern>-->
+<!--            <timeBasedFileNamingAndTriggeringPolicy-->
+<!--                    class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">-->
+<!--                <maxFileSize>10MB</maxFileSize>-->
+<!--            </timeBasedFileNamingAndTriggeringPolicy>-->
+<!--        </rollingPolicy>-->
+<!--    </appender>-->
 
     <root level="info">
         <appender-ref ref="STDOUT"/>
-        <appender-ref ref="FILE"/>
+<!--        <appender-ref ref="FILE"/>-->
     </root>
 </configuration>

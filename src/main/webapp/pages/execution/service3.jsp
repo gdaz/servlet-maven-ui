@@ -1,5 +1,9 @@
-<div class="content-wrapper">
-    <section class="content">
-        <h1>Hello Man Service3!!!</h1>
-    </section>
+<%@ page contentType="text/html; charset=UTF-8" %>
+
+<div class="main-body">
+    <div class="col-sm-12">
+        <div class="box-body">
+            <h1>Service3!!!</h1>
+        </div>
+    </div>
 </div>

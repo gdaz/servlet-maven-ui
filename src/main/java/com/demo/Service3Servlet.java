@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-//@WebServlet("/pages/service2")
 public class Service3Servlet extends HttpServlet {
 
     private static final Logger logger = LoggerFactory.getLogger(Service3Servlet.class);

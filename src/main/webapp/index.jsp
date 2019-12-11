@@ -5,6 +5,6 @@
 
 </title>
 <body>
-<jsp:include page="pages/bpmstarter.jsp"/>
+<jsp:include page="pages/execution/home.jsp"/>
 </body>
 </html>

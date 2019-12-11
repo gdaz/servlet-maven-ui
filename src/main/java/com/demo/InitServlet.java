@@ -4,16 +4,15 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-public class Service1Servlet extends HttpServlet {
+public class InitServlet extends HttpServlet {
 
-    private static final Logger logger = LoggerFactory.getLogger(Service1Servlet.class);
+    private static final Logger logger = LoggerFactory.getLogger(InitServlet.class);
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -30,12 +29,8 @@ public class Service1Servlet extends HttpServlet {
 
             HttpSession httpsession = (HttpSession) req.getSession();
 
-            httpsession.setAttribute("token", "sdvsdvosdvpoimspiovmosidmvoisndvoisndovinsodvinsoidvnosinv");
-//            req.getRequestDispatcher("/pages/execution/service2.jsp").forward(req, resp);
-
-//            req.getRequestDispatcher("/pages/execution/service1.jsp").forward(req, resp);
-            req.getRequestDispatcher("/WEB-INF/pages/service1.jsp").forward(req, resp);
-//            resp.sendRedirect("/pages/service1.jsp");
+//            httpsession.setAttribute("token", "sdvsdvosdvpoimspiovmosidmvoisndvoisndovinsodvinsoidvnosinv");
+            req.getRequestDispatcher("/WEB-INF/pages/bpmstarter.jsp").forward(req, resp);
         } catch (Exception e) {
             logger.error(e.getMessage(), e);
         }

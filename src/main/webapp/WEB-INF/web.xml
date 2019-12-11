@@ -31,14 +31,23 @@
         <url-pattern>*.tiles</url-pattern>
     </servlet-mapping>
 
-    <!--<servlet>-->
-        <!--<servlet-name>DemoServlet</servlet-name>-->
-        <!--<servlet-class>com.demo.DemoServlet</servlet-class>-->
-    <!--</servlet>-->
-    <!--<servlet-mapping>-->
-        <!--<servlet-name>DemoServlet</servlet-name>-->
-        <!--<url-pattern>/demo/*</url-pattern>-->
-    <!--</servlet-mapping>-->
+<!--    <servlet>-->
+<!--        <servlet-name>DemoServlet</servlet-name>-->
+<!--        <servlet-class>com.demo.DemoServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>DemoServlet</servlet-name>-->
+<!--        <url-pattern>/demo/*</url-pattern>-->
+<!--    </servlet-mapping>-->
+
+    <servlet>
+        <servlet-name>InitServlet</servlet-name>
+        <servlet-class>com.demo.InitServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InitServlet</servlet-name>
+        <url-pattern>/home/*</url-pattern>
+    </servlet-mapping>
 
     <servlet>
         <servlet-name>Service1Servlet</servlet-name>
