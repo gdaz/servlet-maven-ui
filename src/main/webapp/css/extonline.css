@@ -1,0 +1,98 @@
+.input-align-txt-right {
+    text-align: right;
+}
+
+.input-align-txt-left {
+    text-align: left;
+}
+
+.alert-container-message {
+    margin: 0 1.25em 0 1.25em;
+    padding: 0.150em;
+}
+
+.alert-container-message .alert-message {
+    font-size: medium;
+    color: #FFFFFF;
+    text-align: center;
+    position: relative;
+}
+
+.alert-panel {
+    border-radius: 8px;
+    background-color: #B00020;
+    height: auto;
+    display: none;
+    padding: 0 0.125em 0 0.125em;
+    min-width: 200px;
+    margin: 0 1em 0 1em;
+    position: relative;
+}
+
+.witness-panel {
+    border-radius: 8px;
+    padding: 0 0.125em 0 0.125em;
+    margin: 0 1em 0 1em;
+    position: fixed;
+}
+
+.form-control .field-radius {
+    border-radius: 5px;
+}
+
+.field-radius {
+    border-radius: 5px;
+    border-color: #a77a94;
+}
+
+.card {
+    display: flex;
+    padding: 1.25rem;
+    margin: 0 1.25rem 1.25rem 1.25rem;
+    border-radius: 0.5525rem;
+}
+
+.card-case-info {
+    /*padding: 1.25rem;*/
+    margin: 0 1.25rem 1.25rem 1.25rem;
+    /*border-radius: 0.5525rem;*/
+    /*background-color: #edece8;*/
+}
+
+.card-information-item {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-case-info-item {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.card-case-info-body {
+    flex: 1 1 auto;
+    border-radius: 3px;
+    margin: 0.6525rem;
+}
+
+.card-case-info-header {
+    font-size: 15px;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #e3e3e3;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+input, textarea {
+    border-radius: 3px !important;
+}
+
+.attach-file-name-space {
+    margin-left: 2.0525em;
+}
+
+table > thead > tr > th {
+    text-align: center !important;
+}

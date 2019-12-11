@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+    <definition name="testTemplate" template="/WEB-INF/pages/testtemplate.jsp">
+        <put-attribute name="testHeader" value="/WEB-INF/pages/testheader.jsp"/>
+        <put-attribute name="testFooter" value="/WEB-INF/pages/testfooter.jsp"/>
+    </definition>
+
+    <!--<definition name="service1" extends="testTemplate">-->
+        <!--<put-attribute name="testBody" value="/pages/execution/service1.jsp"/>-->
+    <!--</definition>-->
+
+    <!--<definition name="service2" extends="testTemplate">-->
+        <!--<put-attribute name="testBody" value="/pages/execution/service2.jsp"/>-->
+    <!--</definition>-->
+
+    <!--<definition name="service3" extends="testTemplate">-->
+        <!--<put-attribute name="testBody" value="/pages/execution/service3.jsp"/>-->
+    <!--</definition>-->
+
+</tiles-definitions>

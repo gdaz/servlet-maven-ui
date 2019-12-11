@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+       http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
+
+    <context:component-scan base-package="com.service, com.page.service, com.model"/>
+    <context:annotation-config/>
+    <mvc:annotation-driven/>
+    <mvc:resources mapping="/resources/**" location="/resources/" />
+
+    <context:property-placeholder/>
+
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <bean id="springApplicationContext" class="com.service.SpringApplicationContext">
+        <property name="localeList">
+            <list>
+                <value>th_TH</value>
+                <value>en_US</value>
+                <value>ja_JP</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource">
+        <property name="poolName" value="springHikariCP"/>
+        <property name="connectionTestQuery" value="SELECT 1"/>
+        <property name="dataSourceClassName" value="com.mysql.cj.jdbc.MysqlDataSource"/>
+        <property name="dataSourceProperties">
+            <props>
+                <prop key="url">jdbc:mysql://localhost:3306/menudb?useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true&amp;characterSetResults=utf8</prop>
+                <prop key="user">root</prop>
+                <prop key="password">password</prop>
+                <prop key="prepStmtCacheSize">250</prop>
+                <prop key="prepStmtCacheSqlLimit">2048</prop>
+                <prop key="cachePrepStmts">true</prop>
+                <prop key="useServerPrepStmts">true</prop>
+            </props>
+        </property>
+    </bean>
+</beans>

@@ -1,0 +1,75 @@
+/**/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+    line-height: 1.5;
+    display: block;
+    width: 100%;
+    color: #122b40;
+}
+
+.top-bar {
+    position: relative;
+    height: 100px;
+}
+
+.top-bar .menu {
+    position: absolute;
+    display: inline-block;
+    top: 36px;
+    left: 36px;
+    font-weight: bold;
+}
+
+.top-bar .menu a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.menu-item {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.delimeter-bar {
+    width: 100%;
+    box-shadow: 2px 2px 2px 2px #9d9d9d;
+}
+
+.body-wrapper {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.main-header {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.main-body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    padding: 25px 25px 25px 25px;
+    background-color: #ccc;
+}
+
+.box-body {
+    background-color: #f5f5f5;
+    box-shadow: 0 0 2px 2px #9d9d9d;
+}
+
+.main-footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 1.25em;
+}
