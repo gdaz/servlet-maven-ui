@@ -15,21 +15,33 @@
     <!-- Bootstrap 3.3.5 -->
     <link rel="stylesheet" href="<%=request.getContextPath()%>/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="<%=request.getContextPath()%>/css/bootstrap-select.css">
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/bootstrap-slider.min.css">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="<%=request.getContextPath()%>/fontawesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/datatables.css">
+<%--    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/dataTables.jqueryui.css">--%>
+<%--    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/jquery.dataTables.css">--%>
+<%--    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/dataTables.bootstrap.css">--%>
 
     <link rel="stylesheet" href="<%=request.getContextPath()%>/css/custom.css" type="text/css">
     <link rel="stylesheet" href="<%=request.getContextPath()%>/css/extonline.css" type="text/css">
 
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/datatables.min.css">
+    <script src="<%=request.getContextPath()%>/resources/js/bootstrap-slider.min.js"></script>
 
     <script src="<%=request.getContextPath()%>/resources/js/jquery-3.4.1.min.js"></script>
+    <script src="<%=request.getContextPath()%>/resources/js/jquery-ui.min.js"></script>
 
     <!-- Bootstrap 3.3.5 -->
     <script src="<%=request.getContextPath()%>/bootstrap/js/bootstrap.min.js"></script>
     <script src="<%=request.getContextPath()%>/resources/js/bootstrap-select.js"></script>
 
-    <script src="<%=request.getContextPath()%>/resources/js/datatables.min.js"></script>
+    <script src="<%=request.getContextPath()%>/resources/js/datatables.js"></script>
+<%--    <script src="<%=request.getContextPath()%>/resources/js/jquery.dataTables.js"></script>--%>
+<%--    <script src="<%=request.getContextPath()%>/resources/js/dataTables.bootstrap.js"></script>--%>
+<%--    <script src="<%=request.getContextPath()%>/resources/js/dataTables.jqueryui.js"></script>--%>
 </head>
 
 <body>
